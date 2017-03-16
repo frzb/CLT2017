@@ -1,6 +1,7 @@
 ## Purpose
 
-This repository contains a PDF rendering of the slide deck and the demo files for the demo of my talk at the Chemnitzer Linux Tage 2017 about "Softwaretesting for Configurationmanagment with Test Kitchen"  (Talk was hold in german, sorry. ;-))
+This repository contains a PDF rendering of the slide deck and the demo files for the demo of my talk at the Chemnitzer Linux Tage 2017 about ["Softwaretesting for Configurationmanagment with Test Kitchen"](https://chemnitzer.linux-tage.de/2017/en/programm/beitrag/244)
+Talk was hold in german, sorry. :wink:
 
 An example for Test Kitchen has been made for Ansible, Chef, and Puppet.
 
