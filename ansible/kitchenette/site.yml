@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  become_method: sudo
+  roles:
+    - { role: geerlingguy.nginx }
+  tasks:
+    - copy: src=files/yolanda_ansible.gif
+            dest=/var/www/html/yolanda.gif
+    - copy: src=files/index.html
+       			dest=/var/www/html/index.html

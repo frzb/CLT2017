@@ -1,0 +1,30 @@
+---
+driver:
+  name: vagrant
+
+verifier:
+  name: inspec
+
+#https://github.com/test-kitchen/test-kitchen/issues/1035
+transport:
+  max_ssh_sessions: 5
+
+provisioner:
+  hosts: test-kitchen
+  name: ansible_playbook
+  ansible_verbose: true
+  require_chef_for_busser: false
+  require_ruby_for_busser: false
+  additional_copy_path: files
+
+platforms:
+  - name: ubuntu-16.04
+    driver_config:
+      network:
+      - ['private_network', {ip: '192.168.33.11'}]
+
+suites:
+  - name: default
+    provisioner:
+      name: ansible_playbook
+      playbook: site.yml
