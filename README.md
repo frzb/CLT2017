@@ -10,7 +10,7 @@ An example for Test Kitchen has been made for Ansible, Chef, and Puppet.
 
 ## Usage
 
-- Enter one of the  `kitchennette` subdirs
+- Enter one of the  `kitchenette` subdirs
 
 ### List
 
